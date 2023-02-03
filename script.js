@@ -1,24 +1,37 @@
-let numeroUm = 1
-let stringUm = "1"
-let numeroTrinta = 30
-let stringTrinta = "30"
-let numeroDez = 10
-let stringDez = "10"
+let form = document.getElementById("questionario")
 
-if (numeroUm == stringUm) {
-	console.log("As variáveis numeroUm e stringUm tem o mesmo valor, mas tipos diferentes")
-} else {
-	console.log("As variáveis numeroUm e stringUm não tem o mesmo valor")
-}
+form.addEventListener("submit", (e) => {
+	e.preventDefault()
 
-if (numeroTrinta === stringTrinta) {
-	console.log("As variáveis numeroTrinta e stringTrinta tem o mesmo valor e mesmo tipo")
-} else {
-	console.log("As variáveis numeroTrinta e stringTrinta não tem o mesmo tipo")
-}
+	let name = document.getElementById("nome").value
+	let idade = document.getElementById("idade").value
+	let linguagem = document.getElementById("linguagem-programacao").value
 
-if (numeroDez == stringDez) {
-	console.log("As variáveis numeroDez e stringDez tem o mesmo valor, mas tipos diferentes")
-} else {
-	console.log("As variáveis numeroDez e stringDez não tem o mesmo valor")
+	let respostas = document.createElement("div")
+	respostas.innerHTML = `
+    
+    <p>Olá ${name}, você tem ${idade} anos e já está aprendendo ${linguagem}!</p>
+    
+				<label for="estudo">Você gosta de estudar ${linguagem}? Responda com o número 1 para SIM ou 2 para NÃO</label>
+				<input type="number" id="estudo" name="estudo" required />
+			</div>
+            <button onClick="responder()">Responder</button>
+            <div id='respostas'></div>
+            
+    `
+	form.appendChild(respostas)
+})
+
+function responder() {
+	let estudo = document.getElementById("estudo")
+	let respostas = document.getElementById("respostas")
+	if (estudo.value == 1) {
+		respostas.innerText = ""
+		respostas.innerText = "Muito bom! Continue estudando e você terá muito sucesso"
+	}
+	if (estudo.value == 2) {
+		respostas.innerText = ""
+		respostas.innerText = "Ahh que pena... Já tentou aprender outras linguagens?"
+	}
+	estudo.value = ""
 }

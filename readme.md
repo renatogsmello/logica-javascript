@@ -5,3 +5,7 @@ Nesse desafio promovido pela Alura, o objetivo é usar o Javascript para criar a
 ### Dia 1
 
 Operações de igualdade entre valores.
+
+### Dia 2
+
+Criação de formulário capturando valores e mostrando o resultado.
