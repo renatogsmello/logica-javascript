@@ -9,3 +9,7 @@ Operações de igualdade entre valores.
 ### Dia 2
 
 Criação de formulário capturando valores e mostrando o resultado.
+
+### Dia 3
+
+Criação de questionário em prompt levando o usuário pro fluxos diferentes dependendo da resposta fornecida.
