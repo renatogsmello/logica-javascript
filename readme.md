@@ -13,3 +13,7 @@ Criação de formulário capturando valores e mostrando o resultado.
 ### Dia 3
 
 Criação de questionário em prompt levando o usuário pro fluxos diferentes dependendo da resposta fornecida.
+
+### Dia 4
+
+Criação de Quiz de 3 tentativas utilizando conficionais para verificar se foi um acerto ou erro, devolvendo feedback para o jogador
