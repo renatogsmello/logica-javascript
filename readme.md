@@ -17,3 +17,7 @@ Criação de questionário em prompt levando o usuário pro fluxos diferentes de
 ### Dia 4
 
 Criação de Quiz de 3 tentativas utilizando conficionais para verificar se foi um acerto ou erro, devolvendo feedback para o jogador
+
+### Dia 5
+
+Criação de lista de mercado usando Arrays e condicionais para mostrar os itens distribuidos nas categorias onde foram registrados.
