@@ -21,3 +21,7 @@ Criação de Quiz de 3 tentativas utilizando conficionais para verificar se foi 
 ### Dia 5
 
 Criação de lista de mercado usando Arrays e condicionais para mostrar os itens distribuidos nas categorias onde foram registrados.
+
+### Dia 6
+
+Exclusão de itens da lista.
