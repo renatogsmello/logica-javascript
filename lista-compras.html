@@ -5,28 +5,52 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Lista de Compras</title>
+		<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
 	</head>
-	<body>
-		<h2>Lista de Compras</h2>
-		<div>
-			<label for="nome"> Nome do item </label>
-			<input type="text" name="nome" id="nome" />
-		</div>
-		<div>
-			<label for="categoria">
-				Categoria
-				<select name="categoria" id="categoria">
+	<body class="bg-amber-100">
+		<h2 class="text-3xl text-center p-4 bg-amber-800 text-amber-300">Lista de Compras</h2>
+		<div class="flex justify-center mt-6">
+			<div class="mr-6">
+				<label for="nome" class="block text-sm font-medium leading-6 text-gray-900">Item</label>
+				<input
+					type="text"
+					name="nome"
+					id="nome"
+					autocomplete="given-name"
+					class="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-yellow-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
+				/>
+			</div>
+			<div class="mr-6">
+				<label for="categoria" class="block text-sm font-medium leading-6 text-gray-900">Categoria</label>
+				<select
+					id="categoria"
+					name="categoria"
+					autocomplete="categoria-name"
+					class="mt-2 block w-full rounded-md border-0 bg-white py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-yellow-300 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
+				>
 					<option value="0">Selecione</option>
 					<option value="frutas">Frutas</option>
 					<option value="laticicios">Laticínios</option>
 					<option value="congelados">Congelados</option>
 					<option value="doces">Doces</option>
 				</select>
-			</label>
+			</div>
+			<button
+				id="addButton"
+				type="button"
+				class="inline-flex self-end justify-center rounded-md bg-amber-600 py-2 px-3 mr-3 text-sm font-semibold text-white shadow-sm hover:bg-amber-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500"
+			>
+				Adicionar
+			</button>
+			<button
+				id="finishButton"
+				type="button"
+				class="inline-flex self-end justify-center rounded-md bg-green-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500"
+			>
+				Finalizar
+			</button>
 		</div>
-		<button id="addButton" type="button">Adicionar</button>
-		<button id="finishButton" type="button">Finalizar</button>
-		<div id="lista"></div>
+		<div id="lista" class="grid grid-cols-4 gap-4 mx-4 mt-10"></div>
 		<script src="./lista-compras-script.js"></script>
 	</body>
 </html>
