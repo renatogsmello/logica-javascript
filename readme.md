@@ -1,6 +1,7 @@
 ## Sobre o Projeto
 
 Nesse desafio promovido pela Alura, o objetivo é usar o Javascript para criar algoritmos e resolver problemas do seu dia a dia. Vamos ver como usar variáveis, condicionais e estruturas de loop para resolver problemas.
+#7DaysOfCode #Alura
 
 ### Dia 1
 
@@ -25,3 +26,7 @@ Criação de lista de mercado usando Arrays e condicionais para mostrar os itens
 ### Dia 6
 
 Exclusão de itens da lista.
+
+### Dia 7
+
+Criação de uma calculadora que faz as operações básicas de somar, diminuir, multiplicar e dividir

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculadora</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="flex flex-col justify-center items-center h-screen bg-slate-900">
+		<div class="grid grid-cols-4 gap-3 bg-slate-800 p-4 rounded">
+			<input id="display" class="text-right text-4xl col-span-4 rounded-lg bg-slate-500 px-4 py-6 text-white" />
+			<input class="bg-zinc-200 text-gray-800 text-4xl p-4 rounded-lg" type="button" value="ac" />
+			<input class="bg-zinc-200 text-gray-800 text-4xl rounded-lg" type="button" value="+/-" />
+			<input class="bg-zinc-200 text-gray-800 text-4xl rounded-lg" type="button" value="%" />
+			<input class="bg-orange-400 rounded-lg text-4xl" type="button" value="/" />
+			<input class="bg-slate-700 text-white text-4xl p-4 rounded-lg" type="button" value="7" value="7" />
+			<input class="bg-slate-700 text-white text-4xl rounded-lg" type="button" value="8" />
+			<input class="bg-slate-700 text-white text-4xl rounded-lg" type="button" value="9" />
+			<input class="bg-orange-400 rounded-lg text-4xl" type="button" value="x" />
+			<input class="bg-slate-700 text-white text-4xl p-4 rounded-lg" type="button" value="4" />
+			<input class="bg-slate-700 text-white text-4xl rounded-lg" type="button" value="5" />
+			<input class="bg-slate-700 text-white text-4xl rounded-lg" type="button" value="6" />
+			<input class="bg-orange-400 text-4xl rounded-lg" type="button" value="-" />
+			<input class="bg-slate-700 text-white text-4xl p-4 rounded-lg" type="button" value="1" />
+			<input class="bg-slate-700 text-white text-4xl rounded-lg" type="button" value="2" />
+			<input class="bg-slate-700 text-white text-4xl rounded-lg" type="button" value="3" />
+			<input class="bg-orange-400 text-4xl rounded-lg" type="button" value="+" />
+			<input class="bg-slate-700 text-white text-4xl p-4 rounded-lg col-span-2" type="button" value="0" />
+			<input class="bg-slate-700 text-white text-4xl rounded-lg" type="button" value="." />
+			<input class="bg-orange-400 text-4xl rounded-lg" type="button" value="=" />
+		</div>
+		<script src="./calculator.js"></script>
+	</body>
+</html>
